@@ -3,7 +3,7 @@ import styled from "styled-components";
 function App() {
   return <MainPageStyled>
     <div className="left"></div>
-    <div className="center">dzfdfdzfdz</div>
+    <div className="center"></div>
     <div className="right"></div>
   </MainPageStyled>;
 }
@@ -15,9 +15,11 @@ const MainPageStyled = styled.div`
   background-image: url("/fond.jpg");
   background-size: cover;
   color: aliceblue;
+  padding: 5rem;
+  gap: 1rem;
 
   .left{
-    flex: 1;
+    flex: 1.5;
     background-color: aqua;
   }
   .center{
