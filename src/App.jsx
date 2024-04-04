@@ -1,11 +1,14 @@
 import styled from "styled-components";
+import LeftCard from "./components/leftCard/LeftCard";
 
 function App() {
   return <MainPageStyled>
-    <div className="left"></div>
-    <div className="center"></div>
-    <div className="right"></div>
-  </MainPageStyled>;
+    
+            <LeftCard />
+        
+          <div className="center"></div>
+          <div className="right"></div>
+        </MainPageStyled>;
 }
 
 const MainPageStyled = styled.div`
@@ -18,10 +21,6 @@ const MainPageStyled = styled.div`
   padding: 5rem;
   gap: 1rem;
 
-  .left{
-    flex: 1.5;
-    background-color: aqua;
-  }
   .center{
     flex: 3;
     background-color: red;
