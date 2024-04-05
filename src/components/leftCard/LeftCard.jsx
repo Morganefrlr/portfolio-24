@@ -9,6 +9,7 @@ const LeftCard = () => {
     <LeftCardStyled>
       <img src="/portrait.jpg" alt="" />
       <BoxInfos />
+      <hr />
       <BoxLanguages />
       <BoxSocial />
       <ButtonCv />
@@ -28,6 +29,11 @@ const LeftCardStyled = styled.div`
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     object-fit: cover;
+  }
+  hr{
+    width: 70%;
+    border: 0.3px solid #3434346c;
+    margin: 20px auto;
   }
 `;
 export default LeftCard;
