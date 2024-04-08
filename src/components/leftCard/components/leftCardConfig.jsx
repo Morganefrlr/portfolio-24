@@ -12,3 +12,17 @@ export const infos = [
       info: "morganeancelin@me.com",
     },
   ];
+
+
+  export const languages = [
+    {
+      label: "Français",
+      number: 100,
+      class: ''
+    },
+    {
+      label: "Anglais",
+      number: 80,
+      class: 'noFull'
+    },
+  ]
