@@ -1,3 +1,5 @@
+import { FaGithub, FaLinkedinIn, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+
 export const infos = [
     {
       label: "Adresse",
@@ -24,5 +26,24 @@ export const infos = [
       label: "Anglais",
       number: 80,
       class: 'noFull'
+    },
+  ]
+
+  export const social = [
+    {
+      label:'git',
+      icon: <FaGithub/>,
+    },
+    {
+      label:'link',
+      icon: <FaLinkedinIn/>,
+    },
+    {
+      label:'mail',
+      icon: <FaEnvelope/>,
+    },
+    {
+      label:'whats',
+      icon: <FaWhatsapp/>,
     },
   ]
