@@ -14,7 +14,7 @@ const ButtonCvStyled = styled.div`
   display: flex;
   width: 100%;
   height: 50px;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -23,6 +23,9 @@ const ButtonCvStyled = styled.div`
   background: linear-gradient(to right, #ce412e, #b60000);
   cursor: pointer;
   transition: all 500ms ease;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  align-self: flex-end;
   &:hover {
     color: #fff;
   }

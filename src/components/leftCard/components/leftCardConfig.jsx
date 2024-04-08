@@ -33,17 +33,21 @@ export const infos = [
     {
       label:'git',
       icon: <FaGithub/>,
+      link:"https://github.com/Morganefrlr"
     },
     {
       label:'link',
       icon: <FaLinkedinIn/>,
+      link:"https://www.linkedin.com/in/morganemartin-frlr/"
     },
     {
       label:'mail',
       icon: <FaEnvelope/>,
+      link:"mailto:morganeancelin@me.com"
     },
     {
       label:'whats',
       icon: <FaWhatsapp/>,
+      link:"https://wa.me/0658800224"
     },
   ]
