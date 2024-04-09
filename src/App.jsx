@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import LeftCard from "./components/leftCard/LeftCard";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return <MainPageStyled>
@@ -7,7 +8,9 @@ function App() {
             <LeftCard />
         
           <div className="center"></div>
-          <div className="right"></div>
+          <div className="right">
+            <Navbar />
+          </div>
         </MainPageStyled>;
 }
 
