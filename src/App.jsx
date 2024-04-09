@@ -21,7 +21,7 @@ const MainPageStyled = styled.div`
   background: #212121;
   color: aliceblue;
   padding: 5rem;
-  gap: 1rem;
+  
 
   .center{
     flex: 3;

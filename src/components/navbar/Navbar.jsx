@@ -3,11 +3,12 @@ import { FaToggleOff } from "react-icons/fa6";
 import { MdPushPin, MdWork } from "react-icons/md";
 import { BiSolidRightArrow } from "react-icons/bi";
 import styled from "styled-components";
+import { useState } from "react";
 
 
 
 const Navbar = () => {
-
+    const [selected, setSelected] = useState('Home')
     const navbarPoint = [
         {
             label: "Home",
@@ -30,22 +31,61 @@ const Navbar = () => {
             icon: <FaDownload/>
         },
     ]
+
+    console.log(selected)
     return (
         <NavbarStyled>
-            <div className="box">
-                {navbarPoint.map(item =>
-                    <div key={item.label} className="button">
-                        {item.icon}
-                    </div>
-                )}
-            </div>
+            <div className="container">
+                <div className={`arrow ${selected}`}>
+                    <BiSolidRightArrow className="icon"/>
+                </div>
+                <div className="box">
+                    {navbarPoint.map(item =>
+                        <div key={item.label} className={selected === item.label ? 'button active' : 'button'} onClick={() => setSelected(item.label)}>
+                            {item.icon}
+                        </div>
+                    )}
+                </div>
+                </div>
         </NavbarStyled>
     );
 };
 
 const NavbarStyled = styled.div`
     flex: 0.5;
-    background-color:green;
+
+
+    .container{
+
+        display: flex;
+        height: fit-content;
+        margin: 10vh auto;
+        gap: 5px;
+        position: relative;
+       
+    }
+
+    .arrow{
+        color: #B60000;
+        position: absolute;
+        transition: all 300ms ease;
+        left: -3px;
+        &.Home{
+            top: 7%;
+        }
+        &.Service{
+            top: 27%;
+        }
+        &.Expericence{
+            top: 47%;
+        }
+        &.Portfolio{
+            top: 67%;
+        }
+        &.Contact{
+            top: 87%;
+        }
+    }
 
     .box{
         display: flex;
@@ -53,7 +93,8 @@ const NavbarStyled = styled.div`
         width: fit-content;
         height: fit-content;
         gap: 5px;
-        margin: 10vh auto;
+        margin-left: 25px;
+       
     }
     .button{
         width: 50px;
@@ -65,6 +106,7 @@ const NavbarStyled = styled.div`
         border-radius: 50%;
         font-size: 12px;
         cursor: pointer;
+        transition: all 300ms ease;
 
         &:hover{
             font-size: 16px;

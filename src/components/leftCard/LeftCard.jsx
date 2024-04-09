@@ -24,6 +24,7 @@ const LeftCardStyled = styled.div`
     background: #212121;
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
                 -15px -15px 30px rgb(60, 60, 60);
+                margin-right: 1rem;
   img {
     width: 100%;
     height: 300px;
