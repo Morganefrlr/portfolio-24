@@ -1,16 +1,26 @@
 import styled from "styled-components";
 import LeftCard from "./components/leftCard/LeftCard";
 import Navbar from "./components/navbar/Navbar";
+import AdminContext from "./context/AdminContext";
+import { useState } from "react";
+
 
 function App() {
+  const [menuSelected, setMenuSelected] = useState('home')
+
+  const providerValue = {
+    menuSelected,
+    setMenuSelected
+  }
+
+
   return <MainPageStyled>
-    
-            <LeftCard />
+            <AdminContext.Provider value={providerValue}>
+              <LeftCard />
+              <div className="center"></div>
+              <Navbar />
+            </AdminContext.Provider>
         
-          <div className="center"></div>
-   
-            <Navbar />
- 
         </MainPageStyled>;
 }
 

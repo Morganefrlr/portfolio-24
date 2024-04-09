@@ -3,45 +3,46 @@ import { FaToggleOff } from "react-icons/fa6";
 import { MdPushPin, MdWork } from "react-icons/md";
 import { BiSolidRightArrow } from "react-icons/bi";
 import styled from "styled-components";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import AdminContext from "../../context/AdminContext";
 
 
 
 const Navbar = () => {
-    const [selected, setSelected] = useState('Home')
+    const{menuSelected, setMenuSelected} = useContext(AdminContext)
     const navbarPoint = [
         {
-            label: "Home",
+            label: "home",
             icon: <FaUser/>
         },
         {
-            label: "Service",
+            label: "service",
             icon: <FaToggleOff/>
         },
         {
-            label: "Expericence",
+            label: "expericence",
             icon: <MdWork/>
         },
         {
-            label: "Portfolio",
+            label: "portfolio",
             icon: < MdPushPin/>
         },
         {
-            label: "Contact",
+            label: "contact",
             icon: <FaDownload/>
         },
     ]
 
-    console.log(selected)
+    
     return (
         <NavbarStyled>
             <div className="container">
-                <div className={`arrow ${selected}`}>
+                <div className={`arrow ${menuSelected}`}>
                     <BiSolidRightArrow className="icon"/>
                 </div>
                 <div className="box">
                     {navbarPoint.map(item =>
-                        <div key={item.label} className={selected === item.label ? 'button active' : 'button'} onClick={() => setSelected(item.label)}>
+                        <div key={item.label} className={menuSelected === item.label ? 'button active' : 'button'} onClick={() => setMenuSelected(item.label)}>
                             {item.icon}
                         </div>
                     )}
@@ -70,19 +71,19 @@ const NavbarStyled = styled.div`
         position: absolute;
         transition: all 300ms ease;
         left: -3px;
-        &.Home{
+        &.home{
             top: 7%;
         }
-        &.Service{
+        &.service{
             top: 27%;
         }
-        &.Expericence{
+        &.expericence{
             top: 47%;
         }
-        &.Portfolio{
+        &.portfolio{
             top: 67%;
         }
-        &.Contact{
+        &.contact{
             top: 87%;
         }
     }
