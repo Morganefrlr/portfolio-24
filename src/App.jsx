@@ -1,13 +1,26 @@
 import styled from "styled-components";
 import LeftCard from "./components/leftCard/LeftCard";
+import Navbar from "./components/navbar/Navbar";
+import AdminContext from "./context/AdminContext";
+import { useState } from "react";
+
 
 function App() {
+  const [menuSelected, setMenuSelected] = useState('home')
+
+  const providerValue = {
+    menuSelected,
+    setMenuSelected
+  }
+
+
   return <MainPageStyled>
-    
-            <LeftCard />
+            <AdminContext.Provider value={providerValue}>
+              <LeftCard />
+              <div className="center"></div>
+              <Navbar />
+            </AdminContext.Provider>
         
-          <div className="center"></div>
-          <div className="right"></div>
         </MainPageStyled>;
 }
 
@@ -18,16 +31,13 @@ const MainPageStyled = styled.div`
   background: #212121;
   color: aliceblue;
   padding: 5rem;
-  gap: 1rem;
+  
 
   .center{
     flex: 3;
     background-color: red;
   }
-  .right{
-    flex: 0.5;
-    background-color:green;
-  }
+
 
 
 `;
