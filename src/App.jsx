@@ -8,9 +8,9 @@ function App() {
             <LeftCard />
         
           <div className="center"></div>
-          <div className="right">
+   
             <Navbar />
-          </div>
+ 
         </MainPageStyled>;
 }
 
@@ -27,10 +27,7 @@ const MainPageStyled = styled.div`
     flex: 3;
     background-color: red;
   }
-  .right{
-    flex: 0.5;
-    background-color:green;
-  }
+
 
 
 `;
