@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { navbarMenuConfig } from "../navbarConfig";
+import { navbarMenuConfig } from "../../../helper/navbarConfig";
 
 const NavbarMenu = ({menuSelected, handleClick}) => {
     return (

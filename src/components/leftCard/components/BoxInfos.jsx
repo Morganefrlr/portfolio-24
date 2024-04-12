@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { infos } from "./leftCardConfig";
+import { infos } from "../../../helper/leftCardConfig";
 
 
 const BoxInfos = () => {

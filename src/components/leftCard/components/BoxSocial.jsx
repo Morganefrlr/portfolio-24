@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { social } from "./leftCardConfig";
+import { social }  from "../../../helper/leftCardConfig";
 
 const BoxSocial = () => {
   return (
