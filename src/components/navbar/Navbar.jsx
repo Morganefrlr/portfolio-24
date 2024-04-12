@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <NavbarStyled>
             <ArrowMenu menuSelected={menuSelected}/>
-            <NavbarMenu menuSelected={menuSelected} handleClick={handleMenuSelected} />
+            <NavbarMenu menuSelected={menuSelected} handleClick={handleMenuSelected}/>
         </NavbarStyled>
     );
 };

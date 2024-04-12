@@ -3,6 +3,8 @@ import LeftCard from "./components/leftCard/LeftCard";
 import Navbar from "./components/navbar/Navbar";
 import AdminContext from "./context/AdminContext";
 import { useState } from "react";
+import About from "./components/middleCard/about/About";
+import MiddleCard from "./components/middleCard/MiddleCard";
 
 
 function App() {
@@ -17,7 +19,8 @@ function App() {
   return <MainPageStyled>
             <AdminContext.Provider value={providerValue}>
               <LeftCard />
-              <div className="center"></div>
+              <MiddleCard />
+
               <Navbar />
             </AdminContext.Provider>
         
@@ -33,10 +36,7 @@ const MainPageStyled = styled.div`
   padding: 5rem;
   
 
-  .center{
-    flex: 3;
-    background-color: red;
-  }
+
 
 
 

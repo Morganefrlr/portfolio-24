@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { languages } from "./leftCardConfig";
+import { languages }  from "../../../helper/leftCardConfig";
 
 const BoxLanguages = () => {
   return (
