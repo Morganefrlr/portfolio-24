@@ -6,7 +6,7 @@ const NavbarMenu = ({menuSelected, handleClick}) => {
         <NavbarMenuStyled>
             {navbarMenuConfig.map(item =>
                 <div key={item.label} 
-                    className={menuSelected === item.label ? 'menuButton menuButtonActive' : 'menuButton'} 
+                    className={menuSelected === item.label ? 'menuButtonActive' : ''} 
                     onClick={() => handleClick(item.label)}>
                     {item.icon}
                 </div>
@@ -23,7 +23,7 @@ const NavbarMenuStyled = styled.div`
     gap: 5px;
     margin-left: 25px;
 
-    .menuButton{
+    div{
         width: 50px;
         height: 50px;
         background:  #212120;
