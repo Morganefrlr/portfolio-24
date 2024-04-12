@@ -26,7 +26,7 @@ const NavbarMenuStyled = styled.div`
     .menuButton{
         width: 50px;
         height: 50px;
-        background: #191919;
+        background:  #212120;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -43,7 +43,7 @@ const NavbarMenuStyled = styled.div`
 
     .menuButtonActive{
         background: linear-gradient(to right, #ce412e, #B60000);
-        color: #191919;
+        color:  #212120;
         font-size: 14px;
 
     }

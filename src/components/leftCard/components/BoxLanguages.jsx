@@ -37,7 +37,7 @@ const BoxLanguagesStyled = styled.div`
       height: 60px;
       box-sizing: content-box;
       border-radius: 50%;
-      border: 3px solid #191919;
+      border: 3px solid  #212120;
       display: flex;
       justify-content: center;
       align-items: center;

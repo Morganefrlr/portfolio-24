@@ -28,7 +28,7 @@ const MainPageStyled = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
-  background: #212121;
+  background: #2a2a29;
   color: aliceblue;
   padding: 5rem;
   

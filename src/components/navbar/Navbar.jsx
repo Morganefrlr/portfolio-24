@@ -1,8 +1,6 @@
-import { BiSolidRightArrow } from "react-icons/bi";
 import styled from "styled-components";
 import { useContext } from "react";
 import AdminContext from "../../context/AdminContext";
-import { navbarMenuConfig } from "./navbarConfig";
 import ArrowMenu from "./components/ArrowMenu";
 import NavbarMenu from "./components/NavbarMenu";
 

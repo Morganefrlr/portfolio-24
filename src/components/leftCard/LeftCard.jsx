@@ -21,7 +21,7 @@ const LeftCardStyled = styled.div`
     flex: 1.5;
     height: fit-content;
     border-radius: 30px;
-    background: #212121;
+    background:  #2a2a29;
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
                 -15px -15px 30px rgb(60, 60, 60);
                 margin-right: 1rem;
@@ -34,7 +34,7 @@ const LeftCardStyled = styled.div`
   }
   hr{
     width: 70%;
-    border: 0.3px solid #3434346c;
+    border: 0.3px solid  #323231ce;
     margin: 20px auto;
   }
 `;

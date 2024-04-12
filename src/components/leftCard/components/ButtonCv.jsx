@@ -18,7 +18,7 @@ const ButtonCvStyled = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
-  color: #212121;
+  color:  #212120;
   font-weight: 500;
   background: linear-gradient(to right, #ce412e, #b60000);
   cursor: pointer;
