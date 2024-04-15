@@ -9,7 +9,7 @@ const Skills = () => {
             <h1>Compétences</h1>
             <hr />
             {skillsArray.map((item, index) => 
-                <div className="container" key={index}>
+                <div className="skillsContainerGrid" key={index}>
                     {item.map(skill =>
                         <CardSkill  
                             key={skill.label} 
@@ -20,10 +20,6 @@ const Skills = () => {
                     )}
                 </div>
             )}
-            
-            
-            
-            
         </SkillsStyled>
     );
 };
@@ -31,7 +27,11 @@ const Skills = () => {
 const SkillsStyled = styled.div`
     width: 100%;
     padding: 30px;
-
+    max-height: 85vh;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
     h1{
         font-size: 40px;
     }
@@ -41,11 +41,12 @@ const SkillsStyled = styled.div`
         border: 0.3px solid  #323231ce;
     }
 
-    .container{
+    .skillsContainerGrid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-row-gap: 70px;
         margin-top: 100px;
+
     }
 
 `

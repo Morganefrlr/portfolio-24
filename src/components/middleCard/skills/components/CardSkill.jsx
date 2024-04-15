@@ -1,26 +1,22 @@
-import React from 'react';
 import styled from 'styled-components';
+import CardSkillBar from './CardSkillBar';
 
 const CardSkill = ({label, color, icon, number}) => {
     return (
         <CardSkillStyled>
-                <div className="boxImage">
+                <div className="cardSkillImg">
                     <img src={icon} alt="" style={{background : `${color}`}}/>
                 </div>
-                <div className="testBoxTexte">
-                    <p className="titre">{label}</p>
-                    <div className="barreFond">
-                        <div className="barreCouleur" style={{background : `${color}` , width : `${number}%`}}>
-                        <p className="chiffre">{number}%</p>
-                        </div>
-                    </div>
+                <div className="cardSkillInfos">
+                    <p className="cardSkillInfos_title">{label}</p>
+                    <CardSkillBar color={color} number={number}/>
                 </div>
         </CardSkillStyled>
     );
 };
 
 const CardSkillStyled = styled.div`
-width: 200px;
+    width: 200px;
     height: 120px;
     background-color: #212120;
     position: relative;
@@ -28,7 +24,8 @@ width: 200px;
     border-bottom-left-radius: 20px;
     display: flex;
     flex-direction: column-reverse;
-    .boxImage{
+    margin: 0 auto;
+    .cardSkillImg{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -49,33 +46,16 @@ width: 200px;
     }
 
 
-    .testBoxTexte{
+    .cardSkillInfos{
         height: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 8px;
-        .titre{
+        &_title{
             font-weight: 600;
             font-size: 18px;
-        }
-
-        .barreFond{
-            width: 80%;
-            height: 25px;
-            display: flex;
-            border-radius: 50px;
-            margin-bottom: 20px;
-            background-color: #323231ce;
-            .barreCouleur{
-                border-radius: 50px;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                padding-right: 10px;
-            }
-
         }
     }
 `
