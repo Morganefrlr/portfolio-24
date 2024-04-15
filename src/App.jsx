@@ -29,7 +29,7 @@ function App() {
 
 const MainPageStyled = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   background: #2a2a29;
   color: aliceblue;

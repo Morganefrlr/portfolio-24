@@ -21,7 +21,6 @@ const AboutContainerImagesStyled = styled.div`
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    gap: 50px;
     .numberContainer{
         position: relative;
         p{
