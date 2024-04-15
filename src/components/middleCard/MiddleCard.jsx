@@ -11,12 +11,10 @@ const MiddleCard = () => {
 
 const MiddleCardStyled = styled.div`
   width: 65vw;
+  height: fit-content;
   border-radius: 30px;
   background: #2a2a29;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
-  height: 70vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 export default MiddleCard;

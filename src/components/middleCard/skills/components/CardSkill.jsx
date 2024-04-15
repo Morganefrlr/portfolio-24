@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CardSkill = () => {
+const CardSkill = ({label, color, icon, number}) => {
     return (
         <CardSkillStyled>
                 <div className="boxImage">
-                    <img src="/logos/css.png" alt="" style={{background : '#2196f3'}}/>
+                    <img src={icon} alt="" style={{background : `${color}`}}/>
                 </div>
                 <div className="testBoxTexte">
-                    <p className="titre">Javascript</p>
+                    <p className="titre">{label}</p>
                     <div className="barreFond">
-                        <div className="barreCouleur" style={{background : '#2196f3' , width : "90%"}}>
-                        <p className="chiffre">90%</p>
+                        <div className="barreCouleur" style={{background : `${color}` , width : `${number}%`}}>
+                        <p className="chiffre">{number}%</p>
                         </div>
                     </div>
                 </div>
@@ -22,7 +22,7 @@ const CardSkill = () => {
 const CardSkillStyled = styled.div`
 width: 200px;
     height: 120px;
-    background-color: #64b6b615;
+    background-color: #212120;
     position: relative;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -67,6 +67,7 @@ width: 200px;
             display: flex;
             border-radius: 50px;
             margin-bottom: 20px;
+            background-color: #323231ce;
             .barreCouleur{
                 border-radius: 50px;
                 display: flex;

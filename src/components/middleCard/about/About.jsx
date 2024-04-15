@@ -22,5 +22,6 @@ const AboutStyled = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin: 10% auto;
 `
 export default About;
