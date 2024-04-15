@@ -41,7 +41,7 @@ export const skillLang = [
     },
     {
         label: 'NextJs',
-        icon: '/logos/next.png',
+        icon: '/logos/next.jpg',
         couleur:'#000000',
         number: 60,
     },
@@ -111,7 +111,7 @@ export const skillOther = [
     },
     {
         label: 'VsCode',
-        icon: '/logos/vs.png',
+        icon: '/logos/vs.jpg',
         couleur:'#2e81b9',
         number: 100,
     },
@@ -130,7 +130,7 @@ export const skillOther = [
     {
         label: 'Figma',
         icon: '/logos/figma.png',
-        couleur:'#f44e1c',
+        couleur:'#03011C',
         number: 80,
     },
 
