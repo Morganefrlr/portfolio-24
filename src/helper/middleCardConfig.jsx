@@ -160,7 +160,7 @@ export const formationConfig = [
     },
     {
         label: "CAP Photographie",
-        year:"2018",
+        year:"2018 - 2019",
         details:"CAP - Ligne et Formations"
     },
     {
