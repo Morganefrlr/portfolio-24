@@ -147,7 +147,7 @@ export const skillsArray = [
 
 //////////////////////////////////// Experience Component ////////////////////////////////////
 
-export const formation = [
+export const formationConfig = [
     {
         label: "React en Entreprise",
         year:"2023 - 2024",
@@ -170,7 +170,7 @@ export const formation = [
     },
 ]
 
-export const experience = [
+export const experienceConfig = [
     {
         index: 1,
         year: "2022 - 2024",
