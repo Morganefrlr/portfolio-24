@@ -139,3 +139,54 @@ export const skillOther = [
 export const skillsArray = [
     skillLang, skillStyle,  skillBd, skillOther
 ]
+
+
+
+
+
+
+//////////////////////////////////// Experience Component ////////////////////////////////////
+
+export const formationConfig = [
+    {
+        label: "React en Entreprise",
+        year:"2023 - 2024",
+        details:"Lead Développeur ViDev - Paris"
+    },
+    {
+        label: "Développeur Web (BAC + 2)",
+        year:"2022 - 2023",
+        details:"Diplome RNCP niveau 5 - OpenClassrooms"
+    },
+    {
+        label: "CAP Photographie",
+        year:"2018 - 2019",
+        details:"CAP - Ligne et Formations"
+    },
+    {
+        label: "Capacité en droit - BAC",
+        year:"2014 - 2016",
+        details:"Diplome de niveau 4 - Mention 'Bien' - Faculté Saint Serge - Angers"
+    },
+]
+
+export const experienceConfig = [
+    {
+        index: 1,
+        year: "2022 - 2024",
+        label:" Développeuse Web",
+        details:"Formations - Projets Personnels",
+    },
+    {
+        index: 2,
+        year: "2015 - 2020",
+        label:"Graphiste & Photographe - Freelance",
+        details:"Retouches Photos - Création de logos, flyers, affiches... - Photographie de paysages",
+    },
+    {
+        index: 3,
+        year: "2010 - 2015",
+        label:"Gérante Restaurant",
+        details:"Responsable de salle - Gestion d’équipes - Gestion des Stocks",
+    },
+]
