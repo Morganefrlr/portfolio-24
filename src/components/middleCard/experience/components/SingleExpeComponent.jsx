@@ -1,17 +1,16 @@
 import styled from "styled-components";
 
 
-const SingleExpeComponent = () => {
+const SingleExpeComponent = ({index, year, label, details}) => {
     return (
         <SingleExpeComponentStyled>
             <div className="test1">
-                <div>1</div>
-                <p>2024-now...;</p>
+                <div>{index}</div>
+                <p>{year}</p>
             </div>
             <div className="test2">
-                <h4>Developpeur full stack</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eligendi laboriosam rem id animi illo quod fuga nulla architecto temporibus. Dignissimos labore, ipsam qui consequuntur perferendis esse quis deleniti cumque.
-                Voluptas omnis iste earum fugiat debitis architecto quam explicabo, libero distinctio magnam.</p>
+                <h4>{label}</h4>
+                <p>{details}</p>
             </div>
         </SingleExpeComponentStyled>
 
@@ -47,6 +46,7 @@ const SingleExpeComponentStyled = styled.div`
 
         p{
             margin-left: 50px;
+            font-size: 12px;
         }
     }
 

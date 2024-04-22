@@ -29,7 +29,7 @@ const Experience = () => {
 
                 <div className="containerExperience">
                     {experienceConfig.map(item =>
-                        <SingleExpeComponent />
+                        <SingleExpeComponent key={item.label} index={item.index} year={item.year} label={item.label} details={item.details}/>
                     )}
                 </div>
 
