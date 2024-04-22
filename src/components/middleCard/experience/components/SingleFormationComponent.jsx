@@ -4,9 +4,9 @@ import styled from "styled-components";
 const SingleFormationComponent = ({year, details, label}) => {
     return (
         <SingleFormationComponentStyled>
-            <p className="year">{year}</p>
+            <p className="formationYear">{year}</p>
             <h4>{label}</h4>
-            <p className="details">{details}</p>
+            <p className="formationDetails">{details}</p>
         </SingleFormationComponentStyled>
     );
 };
@@ -18,7 +18,7 @@ const SingleFormationComponentStyled = styled.div`
     gap: 6px;
     margin: 10px;
     flex-direction: column;
-    .year{
+    .formationYear{
         font-size: 10px;
         background: linear-gradient(to right, #ce412e, #B60000);
         -webkit-background-clip: text;
@@ -26,7 +26,7 @@ const SingleFormationComponentStyled = styled.div`
         font-weight: 500;
 
     }
-    .details{
+    .formationDetails{
         font-size: 12px;
         line-height: 16px;
         font-weight: 300; 

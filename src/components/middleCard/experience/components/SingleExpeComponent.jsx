@@ -4,11 +4,11 @@ import styled from "styled-components";
 const SingleExpeComponent = ({index, year, label, details}) => {
     return (
         <SingleExpeComponentStyled>
-            <div className="test1">
+            <div className="experienceTopContainer">
                 <div>{index}</div>
                 <p>{year}</p>
             </div>
-            <div className="test2">
+            <div className="experienceBottomContainer">
                 <h4>{label}</h4>
                 <p>{details}</p>
             </div>
@@ -22,7 +22,7 @@ const SingleExpeComponentStyled = styled.div`
     flex-direction: column;
     margin: 40px 0;
     gap: 20px;
-    .test1{
+    .experienceTopContainer{
         display: flex;
         width: 70%;
         height: 40px;
@@ -50,7 +50,7 @@ const SingleExpeComponentStyled = styled.div`
         }
     }
 
-    .test2{
+    .experienceBottomContainer{
         margin-left: 50px;
         display: flex;
         flex-direction: column;
