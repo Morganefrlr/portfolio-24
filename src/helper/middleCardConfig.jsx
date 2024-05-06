@@ -190,3 +190,81 @@ export const experienceConfig = [
         details:"Responsable de salle - Gestion d’équipes - Gestion des Stocks",
     },
 ]
+
+
+//////////////////////////////////// Portfolio Component ////////////////////////////////////
+
+export const projectsPortfolio = [
+    {
+     label:"eshop",
+     details:"Dashboard, Front-end",
+     className:"one",
+     img:"/projects/dash.png",
+     desc:"Projet personel React et SASS Front-end. Dashboard multi-projets. Présenté sous la forme d'un tableau de bord, vous trouverez présenté ici plusieurs petit projets classique: Calculatrice, Météo, Calendrier et Heure, Musique player, Quiz, To do list, Tik Tak Toe, Memory.",
+     link:"https://morgane-dashboard23.netlify.app/",
+     video: "/videos/dashboard.mp4",
+    }, 
+    {
+     label:"crazeeBurger",
+     details:"Dashboard, Front-end",
+     className:"two",
+     img:"/projects/dash.png",
+     desc:"Projet personel React et SASS Front-end. Dashboard multi-projets. Présenté sous la forme d'un tableau de bord, vous trouverez présenté ici plusieurs petit projets classique: Calculatrice, Météo, Calendrier et Heure, Musique player, Quiz, To do list, Tik Tak Toe, Memory.",
+     link:"https://morgane-dashboard23.netlify.app/",
+     video: "/videos/dashboard.mp4",
+    }, 
+    {
+     label:"Dashboard",
+     details:"Dashboard, Front-end",
+     className:"three",
+     img:"/projects/dash.png",
+     desc:"Projet personel React et SASS Front-end. Dashboard multi-projets. Présenté sous la forme d'un tableau de bord, vous trouverez présenté ici plusieurs petit projets classique: Calculatrice, Météo, Calendrier et Heure, Musique player, Quiz, To do list, Tik Tak Toe, Memory.",
+     link:"https://morgane-dashboard23.netlify.app/",
+     video: "/videos/dashboard.mp4",
+    }, 
+    {
+     label:"Share Your Life",
+     details:"Reseau Social - Full-Stack",
+     className:"four",
+     img:"/projects/share.png",
+     desc:"Projet personel React et SASS pour le Front, NodeJs pour le Back et MySQL pour la Base de données. Pour acceder aux fonctionalités qu'offre 'Share Your Life', il est impératif de s'inscrire. Vous pourrez ensuite créer votre profil, mettre en ligne des posts, avec ou sans images, les modifier, les supprimer, les liker ou encore les commenter. Il vous sera également possible de suivre d'autres utilisateurs et d'accéder a leurs propres profils. Afin de permettre une fluidité de navigation j'ai utilisé React Query sur la partie Front, l'API est quant à elle sécurisée grâce a JSONwebtoken.",
+     link:"https://shareyourlife-23.netlify.app/",
+     video: "/videos/share.mp4",
+    }, 
+    {
+     label:"Just Write",
+     details:"Blog Personnel - Full-Stack",
+     className:"five",
+     img:"/projects/blog.png",
+     desc:"Projet personel React et SASS pour le Front, NodeJs pour le Back et MongoDB pour la Base de données. Just Write est un blog personnel qui permet d'écrire et de lire des articles.",
+     link:"https://blog2023-justwrite.netlify.app/",
+     video: "/videos/just.mp4",
+    }, 
+    {
+     label:"Recipes App",
+     details:"Site de recherche de recettes - Front-End",
+     className:"six",
+     img:"/projects/recipes.png",
+     desc:"rojet personel React et SASS, Recipes App pour la recherche de recettes, en bonus, la possibilité de mettre des recettes dans les favoris.",
+     link:"https://morgane-recipesapp2022.netlify.app/",
+     video: "/videos/recipes.mp4",
+    }, 
+    {
+     label:"Kasa, Location Immobilière",
+     details:"React App partie Front-End",
+     className:"seven",
+     img:"/projects/kasa.png",
+     desc:"Projet OpenClassrooms développé en ReactJs et SASS, Kasa est un site de location immobilière.",
+     link:"https://kasa2022-app.netlify.app/",
+     video: "/videos/kasa.mp4",
+    }, 
+    {
+     label:"ohMyFood",
+     details:"Page HTML et CSS",
+     className:"eight",
+     img:"/projects/ohmyfood.png",
+     desc:"Premier projet d'OpenClassrooms, 'Booki' est un site qui permet de trouver un logement et une activité dans la ville de son choix. Le but du projet était de développer une page en HTML et en CSS, selon une maquette.",
+     link:"https://morganefrlr.github.io/ProjetP3-Morgane-Martin/",
+     video: "/videos/ohMyFood.mp4",
+    }, 
+ ]
