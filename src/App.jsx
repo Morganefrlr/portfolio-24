@@ -3,16 +3,22 @@ import LeftCard from "./components/leftCard/LeftCard";
 import Navbar from "./components/navbar/Navbar";
 import AdminContext from "./context/AdminContext";
 import { useState } from "react";
-import About from "./components/middleCard/about/About";
 import MiddleCard from "./components/middleCard/MiddleCard";
 
 
 function App() {
   const [menuSelected, setMenuSelected] = useState('home')
+  const [projectSelected, setProjectSelected] = useState('none')
+  const [isProjectOpen, setIsProjectOpen] = useState(false)
+
 
   const providerValue = {
     menuSelected,
-    setMenuSelected
+    setMenuSelected,
+    projectSelected,
+    setProjectSelected,
+    isProjectOpen,
+    setIsProjectOpen
   }
 
 
@@ -34,12 +40,6 @@ const MainPageStyled = styled.div`
   background: #2a2a29;
   color: aliceblue;
   padding: 5rem;
-  
-
-
-
-
-
 `;
 
 export default App;

@@ -2,5 +2,11 @@ import { createContext } from "react";
 
 export default createContext({
     menuSelected:'home',
-    setMenuSelected: () => {}
+    setMenuSelected: () => {},
+    
+    isProjectOpen: false,
+    setIsProjectOpen: () => {},
+
+    projectSelected:'none',
+    setProjectSelected: () => {}
 })

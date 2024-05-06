@@ -7,9 +7,11 @@ import NavbarMenu from "./components/NavbarMenu";
 
 
 const Navbar = () => {
-    const{menuSelected, setMenuSelected} = useContext(AdminContext)
+    const{menuSelected, setMenuSelected,setProjectSelected, setIsProjectOpen} = useContext(AdminContext)
 
-    const handleMenuSelected = (menu) =>{
+    const handleMenuSelected = async (menu) =>{
+        await setIsProjectOpen(false)
+        await setProjectSelected('none')
         setMenuSelected(menu)
     }
 
