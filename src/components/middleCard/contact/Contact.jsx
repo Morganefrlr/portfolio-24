@@ -1,11 +1,29 @@
-import React from 'react';
+import styled from 'styled-components';
 
 const Contact = () => {
     return (
-        <div>
-            je suis le contact
-        </div>
+        <ContactStyled>
+            <h1>Contact</h1>
+            <hr />
+        </ContactStyled>
     );
 };
 
+const ContactStyled = styled.div`
+    width: 100%;
+    padding: 30px;
+    max-height: 85vh;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+       display: none;
+    }
+    h1{
+        font-size: 40px;
+    }
+    hr{
+        width: 80%;
+        margin: 20px auto;
+        border: 0.3px solid  #323231ce;
+    }
+`
 export default Contact;
