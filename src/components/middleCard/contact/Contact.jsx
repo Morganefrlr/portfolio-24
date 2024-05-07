@@ -1,33 +1,55 @@
 import styled from 'styled-components';
 import BoxInfos from '../../leftCard/components/BoxInfos';
+import { useRef, useState } from 'react';
+
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+
+    const formRef = useRef()
+    const [sent, setSent] = useState(false)
+
+    const handleSubmit = (e) =>{
+       e.preventDefault()
+       emailjs.sendForm('service_mnn36yh', 'template_h7ubhxy', formRef.current, 'z-ItlutE25_XNkWDj')
+      .then((result) => {
+          console.log(result.text);
+          setSent(true)
+      }, (error) => {
+          console.log(error.text);
+      });
+    }
+
+
+
     return (
         <ContactStyled>
             <h1>Contact</h1>
             <hr />
             <div className='contactContainer'>
-                <div className='left'>
+                <form className='left' ref={formRef} onSubmit={handleSubmit}>
                     <div className='container'>
                         <div className='input'>
                             <p>Nom Complet</p>
-                            <input type="text" placeholder='Votre nom'/>
+                            <input type="text" placeholder='Votre nom' name='user_name'/>
                         </div>
                         <div className='input'>
                             <p>Adresse mail</p>
-                            <input type="email" placeholder='Votre email'/>
+                            <input type="email" placeholder='Votre email' name='user_email' required/>
                         </div>
                         <div className='input'>
                             <p>Sujet du Message</p>
-                            <input type="text" placeholder='Sujet'/>
+                            <input type="text" placeholder='Sujet' name='user_subject'/>
                         </div>
                         <div className='input'> 
                             <p>Message</p>
-                            <textarea placeholder='Message'></textarea>
+                            <textarea placeholder='Message' name='message' required></textarea>
                         </div>
                     </div>
                     <button>Envoyer</button>
-                </div>
+                    {sent && <span className='messageSent'>Merci, votre message a bien été envoyé!</span>}
+                </form>
                 <div className='right'>
                     <div className='title'>
                         <h4>Morgane Ancelin</h4>
@@ -71,7 +93,9 @@ const ContactStyled = styled.div`
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: 26vh;
+                height: fit-content;
+                gap: 20px;
+               
             }
             .input{
                 width: 90%;
@@ -129,11 +153,11 @@ const ContactStyled = styled.div`
         }
         .right{
             flex: 0.5;
-            height: 26vh;
+            height: 100%;
             border: 1px solid #323231ce;
             display: flex;
             flex-direction: column;
-            padding: 60px 0 0 30px;
+            padding: 60px 0 60px 30px;
             border-radius: 10px;
 
             .title{
