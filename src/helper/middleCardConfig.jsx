@@ -268,3 +268,43 @@ export const projectsPortfolio = [
      video: "/videos/ohMyFood.mp4",
     }, 
  ]
+
+
+
+
+//////////////////////////////////// Contact Component ////////////////////////////////////
+
+export const inputContactConfig = [
+    {
+        label:'Nam Complet',
+        html:"input",
+        type:'text',
+        placeholder:"Votre nom",
+        name:'user_name',
+        required:false,
+    },
+    {
+        label:'Adresse mail',
+        html:"input",
+        type:'email',
+        placeholder:"Votre email",
+        name:'user_email',
+        required:true,
+    },
+    {
+        label:'Sujet du Message',
+        html:"input",
+        type:'text',
+        placeholder:"Sujet",
+        name:'user_subject',
+        required:false,
+    },
+    {
+        label:'Message',
+        html:"textarea",
+        type:'',
+        placeholder:"Message",
+        name:'message',
+        required:true,
+    },
+]

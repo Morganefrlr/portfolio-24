@@ -2,7 +2,7 @@ import styled from "styled-components";
 import LeftCard from "./components/leftCard/LeftCard";
 import Navbar from "./components/navbar/Navbar";
 import AdminContext from "./context/AdminContext";
-import { useState } from "react";
+import {  useState } from "react";
 import MiddleCard from "./components/middleCard/MiddleCard";
 
 
@@ -12,13 +12,15 @@ function App() {
   const [isProjectOpen, setIsProjectOpen] = useState(false)
 
 
+
   const providerValue = {
     menuSelected,
     setMenuSelected,
     projectSelected,
     setProjectSelected,
     isProjectOpen,
-    setIsProjectOpen
+    setIsProjectOpen,
+
   }
 
 
