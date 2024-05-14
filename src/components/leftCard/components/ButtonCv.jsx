@@ -4,8 +4,10 @@ import styled from "styled-components";
 const ButtonCv = () => {
   return (
     <ButtonCvStyled>
-      <FaDownload />
-      <p>Télécharger CV</p>
+      <a href="/cv.pdf" download="MoganeAncelinCv">
+        Télécharger CV
+        <FaDownload />
+      </a> 
     </ButtonCvStyled>
   );
 };
