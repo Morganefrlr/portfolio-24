@@ -3,14 +3,16 @@ import styled from "styled-components";
 
 const ButtonCv = () => {
   return (
-    <ButtonCvStyled>
-      <FaDownload />
-      <p>Télécharger CV</p>
-    </ButtonCvStyled>
+    
+      <ButtonCvStyled href="/cv.pdf" download="MoganeAncelinCv">
+        Télécharger CV
+        <FaDownload />
+      </ButtonCvStyled> 
+    
   );
 };
 
-const ButtonCvStyled = styled.div`
+const ButtonCvStyled = styled.a`
   display: flex;
   width: 100%;
   height: 50px;
@@ -19,6 +21,7 @@ const ButtonCvStyled = styled.div`
   align-items: center;
   gap: 10px;
   color:  #212120;
+  text-decoration: none;
   font-weight: 500;
   background: linear-gradient(to right, #ce412e, #b60000);
   cursor: pointer;
