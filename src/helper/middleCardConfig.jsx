@@ -196,22 +196,22 @@ export const experienceConfig = [
 
 export const projectsPortfolio = [
     {
-     label:"eshop",
+     label:"MugStyle",
      details:"Dashboard, Front-end",
      className:"one",
-     img:"/projects/dash.png",
+     img:"/projects/mugstyle.png",
      desc:"Projet personel React et SASS Front-end. Dashboard multi-projets. Présenté sous la forme d'un tableau de bord, vous trouverez présenté ici plusieurs petit projets classique: Calculatrice, Météo, Calendrier et Heure, Musique player, Quiz, To do list, Tik Tak Toe, Memory.",
-     link:"https://morgane-dashboard23.netlify.app/",
-     video: "/videos/dashboard.mp4",
+     link:"https://eshop-mugstyle2024.vercel.app/",
+     video: "/videos/mugStyle.mp4",
     }, 
     {
-     label:"crazeeBurger",
+     label:"CrazeeBurger",
      details:"Dashboard, Front-end",
      className:"two",
-     img:"/projects/dash.png",
+     img:"/projects/crazee.png",
      desc:"Projet personel React et SASS Front-end. Dashboard multi-projets. Présenté sous la forme d'un tableau de bord, vous trouverez présenté ici plusieurs petit projets classique: Calculatrice, Météo, Calendrier et Heure, Musique player, Quiz, To do list, Tik Tak Toe, Memory.",
-     link:"https://morgane-dashboard23.netlify.app/",
-     video: "/videos/dashboard.mp4",
+     link:"https://crazee-burger-git-main-morganes-projects.vercel.app/",
+     video: "/videos/crazee.mp4",
     }, 
     {
      label:"Dashboard",
