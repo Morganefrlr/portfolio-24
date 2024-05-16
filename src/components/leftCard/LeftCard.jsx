@@ -51,5 +51,19 @@ const LeftCardStyled = styled.div`
       display: none;
     }
   }
+
+  @media (max-width: 640px){
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 0 30px 0;
+    gap: 20px;
+    img{
+      width: 100%;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 0px;
+    }
+    
+  }
+  
 `;
 export default LeftCard;

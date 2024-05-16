@@ -70,6 +70,13 @@ const ExperienceStyled = styled.div`
             margin: 0;
         }
     }
+
+    @media (max-width: 640px){
+        .containerFormation{
+            grid-row-gap: 60px;
+            margin-bottom: 80px;
+        }
+    }
 `
 
 export default Experience;

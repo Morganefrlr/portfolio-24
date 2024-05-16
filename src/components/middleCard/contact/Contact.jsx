@@ -43,5 +43,12 @@ const ContactStyled = styled.div`
         margin-top: 5vh;
 
     }
+
+
+    @media (max-width: 640px){
+        .contactContainer{
+        flex-direction: column;
+    }
+    }
 `
 export default Contact;

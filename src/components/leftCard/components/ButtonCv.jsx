@@ -48,5 +48,13 @@ const ButtonCvStyled = styled.a`
     width: 15%;
     font-size: 80%;
   }
+
+
+  @media (max-width: 640px){
+    width: 100%;
+    height: 60px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0px;
+  }
 `;
 export default ButtonCv;

@@ -39,6 +39,9 @@ const NavbarStyled = styled.div`
         margin: 4vh auto;
     }
     
+    @media (max-width: 640px){
+        
+    }
 `
 
 export default Navbar;

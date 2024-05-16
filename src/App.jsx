@@ -54,6 +54,10 @@ const MainPageStyled = styled.div`
     
   }
   
+  @media (max-width: 640px){
+    padding: 0;
+    align-items: center;
+  }
 `;
 
 export default App;

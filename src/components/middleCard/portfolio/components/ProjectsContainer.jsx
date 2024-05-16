@@ -49,6 +49,11 @@ const ProjectsContainerStyled = styled.div`
         grid-column: 3;
         grid-row: 4;
     }
+
+    @media (max-width: 640px){
+        display: flex;
+        flex-direction: column;
+    }
 `
 
 export default ProjectsContainer;

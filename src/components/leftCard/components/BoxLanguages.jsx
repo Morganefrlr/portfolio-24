@@ -64,5 +64,9 @@ const BoxLanguagesStyled = styled.div`
   @media (max-width: 768px){
     flex-direction: column;
   }
+
+  @media (max-width: 640px){
+    flex-direction: row;
+  }
 `;
 export default BoxLanguages;

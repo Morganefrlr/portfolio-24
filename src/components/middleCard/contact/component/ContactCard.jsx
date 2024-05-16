@@ -37,5 +37,10 @@ const ContactCardStyled = styled.div`
         text-transform: uppercase;
     }
 
+    @media (max-width: 640px){
+        margin-top:50px;
+    }
+
+
 `
 export default ContactCard;

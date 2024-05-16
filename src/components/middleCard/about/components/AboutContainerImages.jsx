@@ -40,11 +40,23 @@ const AboutContainerImagesStyled = styled.div`
         .numberContainer{
 
             p{
+                font-size: 10px;
+            }
+            img{
+                height: 150px;
+            }
+        }
+    }
+
+    @media (max-width: 640px){
+        .numberContainer{
+
+            p{
                 text-align: center;
                 left: 10%;
             }
             img{
-                height: 150px;
+                height: 100px;
             }
         }
     }

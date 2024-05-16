@@ -36,5 +36,9 @@ const NavbarButtonStyled = styled.div`
         width: 70px;
         height: 70px;
     }
+    @media (max-width: 640px){
+        width: 50px;
+        height: 50px;
+    }
 `
 export default NavbarBoutton;

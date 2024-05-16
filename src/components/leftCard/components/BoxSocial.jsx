@@ -62,6 +62,11 @@ const BoxSocialStyled = styled.div`
     }
     
   }
+
+  @media (max-width: 640px){
+    flex-direction: row;
+    margin: 0 auto;
+  }
 `;
 
 export default BoxSocial;
