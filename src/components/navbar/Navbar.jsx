@@ -31,7 +31,17 @@ const NavbarStyled = styled.div`
     margin: 10vh auto;
     gap: 5px;
     position: relative;
+
+    @media (max-width: 768px){
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 4vh auto;
+    }
     
+    @media (max-width: 640px){
+        
+    }
 `
 
 export default Navbar;

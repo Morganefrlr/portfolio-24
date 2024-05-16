@@ -37,5 +37,24 @@ const ButtonCvStyled = styled.a`
     background: transparent;
     border: 3px solid #b60000;
   }
+
+  @media (max-width: 768px){
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    height: 300px;
+    margin: 0;
+    width: 15%;
+    font-size: 80%;
+  }
+
+
+  @media (max-width: 640px){
+    width: 100%;
+    height: 60px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0px;
+  }
 `;
 export default ButtonCv;

@@ -16,5 +16,10 @@ const MiddleCardStyled = styled.div`
   background: #2a2a29;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
   display: flex;
+
+
+  @media (max-width: 768px){
+    width: 90vw;
+  }
 `;
 export default MiddleCard;

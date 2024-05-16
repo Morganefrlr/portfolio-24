@@ -53,10 +53,20 @@ const BoxLanguagesStyled = styled.div`
       }
       .noFull{
         border-top:3px solid transparent;
-      }
-
-      
+      } 
     }
+  }
+
+  @media (max-width: 1024px){
+    gap: 20px;
+  }
+
+  @media (max-width: 768px){
+    flex-direction: column;
+  }
+
+  @media (max-width: 640px){
+    flex-direction: row;
   }
 `;
 export default BoxLanguages;

@@ -75,6 +75,12 @@ const FormStyled = styled.form`
             background: linear-gradient(to left, #ce412e, #B60000);
         }
     }
+
+    @media (max-width: 1024px){
+        button{
+            width: 50%; 
+        }
+    }
         
 `
 export default Form;

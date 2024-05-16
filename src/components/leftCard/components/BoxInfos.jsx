@@ -8,9 +8,10 @@ const BoxInfos = () => {
         {infos.map((item) => (
           <div key={item.label} className="infos">
             <div className="infos_point"/>
-            <p>{item.label}</p>
-            <p>{item.info}</p>
-          </div>
+            <div className="infos_details">
+              <p>{item.label}</p>
+              <p>{item.info}</p></div>
+            </div>
         ))}
       </BoxInfosStyled>
     );
@@ -32,20 +33,29 @@ const BoxInfosStyled = styled.div`
       background: linear-gradient(to right, #ce412e, #B60000);
       margin-right: 10px;
     }
-    p:nth-child(even){
-      width: 30%;
-      text-transform: uppercase;
-      font-size: 13px;
-      font-weight: 700;
-      background: linear-gradient(to right, #ce412e, #B60000);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    &_details{
+      display: flex;
+      flex-direction: column;
+
+      p:nth-child(odd){
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        background: linear-gradient(to right, #ce412e, #B60000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      p:nth-child(even){
+        font-size: 12px;
+      }
     }
-    p:nth-child(odd){
-      width: 50%;
-      font-size: 12px;
-    }
+    
   }
+
+  @media (max-width: 768px){
+      justify-content: center;
+  }
+
 `
 
 export default BoxInfos;

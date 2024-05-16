@@ -30,5 +30,9 @@ const AboutButtonStyled = styled.button`
     &:active{
         background: linear-gradient(to left, #ce412e, #B60000);
     }
+
+    @media (max-width: 640px){
+        width: 50%;
+    }
 `
 export default AboutButton;

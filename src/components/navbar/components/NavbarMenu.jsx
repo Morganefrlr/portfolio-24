@@ -24,6 +24,10 @@ const NavbarMenuStyled = styled.div`
     height: fit-content;
     gap: 5px;
     margin-left: 25px;
+
+    @media (max-width: 768px){
+        flex-direction:row ;
+    }
     
 `
 

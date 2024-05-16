@@ -41,7 +41,23 @@ const MainPageStyled = styled.div`
   display: flex;
   background: #2a2a29;
   color: aliceblue;
-  padding: 5rem;
+  padding: 5rem 3rem;
+
+  @media (max-width: 1024px){
+    padding: 5rem 2rem;
+  }
+
+  @media (max-width: 768px){
+    flex-direction: column-reverse;
+    padding: 2rem;
+    gap: 50px;
+    
+  }
+  
+  @media (max-width: 640px){
+    padding: 0;
+    align-items: center;
+  }
 `;
 
 export default App;
