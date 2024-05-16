@@ -37,5 +37,19 @@ const LeftCardStyled = styled.div`
     border: 0.3px solid  #323231ce;
     margin: 20px auto;
   }
+
+  @media (max-width: 768px){
+    display: flex;
+    justify-content: space-between;
+    img {
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0px;
+    width: 20%;
+    }
+
+    hr{
+      display: none;
+    }
+  }
 `;
 export default LeftCard;

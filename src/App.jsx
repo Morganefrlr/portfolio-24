@@ -46,6 +46,14 @@ const MainPageStyled = styled.div`
   @media (max-width: 1024px){
     padding: 5rem 2rem;
   }
+
+  @media (max-width: 768px){
+    flex-direction: column-reverse;
+    padding: 2rem;
+    gap: 50px;
+    
+  }
+  
 `;
 
 export default App;

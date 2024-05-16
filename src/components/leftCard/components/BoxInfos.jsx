@@ -52,6 +52,10 @@ const BoxInfosStyled = styled.div`
     
   }
 
+  @media (max-width: 768px){
+      justify-content: center;
+  }
+
 `
 
 export default BoxInfos;

@@ -60,5 +60,9 @@ const BoxLanguagesStyled = styled.div`
   @media (max-width: 1024px){
     gap: 20px;
   }
+
+  @media (max-width: 768px){
+    flex-direction: column;
+  }
 `;
 export default BoxLanguages;

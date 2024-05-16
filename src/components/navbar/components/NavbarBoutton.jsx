@@ -30,5 +30,11 @@ const NavbarButtonStyled = styled.div`
         font-size: 14px;
 
     }
+
+
+    @media (max-width: 768px){
+        width: 70px;
+        height: 70px;
+    }
 `
 export default NavbarBoutton;

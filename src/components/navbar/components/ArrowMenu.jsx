@@ -29,6 +29,12 @@ const ArrowMenuStyled = styled.div`
         &.contact{
             top: 87%;
         }
+
+
+
+    @media (max-width: 768px){
+        display: none;
+    }
     
 `
 export default ArrowMenu;

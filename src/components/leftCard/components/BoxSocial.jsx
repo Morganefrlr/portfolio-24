@@ -48,6 +48,20 @@ const BoxSocialStyled = styled.div`
     background: #ffffff;
     color: #212121;
   }
+
+
+  @media (max-width: 768px){
+    flex-direction: column;
+    gap: 15px;
+    height:fit-content ;
+    width: fit-content;
+
+    a{
+      width: 50px;
+      height: 50px;
+    }
+    
+  }
 `;
 
 export default BoxSocial;

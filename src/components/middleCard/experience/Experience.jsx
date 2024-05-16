@@ -61,6 +61,15 @@ const ExperienceStyled = styled.div`
         grid-template-columns: repeat(2, 1fr);
 
     }
+
+    @media (max-width: 768px){
+        .containerFormation{
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            width: 100%;
+            margin: 0;
+        }
+    }
 `
 
 export default Experience;

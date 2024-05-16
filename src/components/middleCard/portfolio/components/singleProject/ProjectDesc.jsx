@@ -44,7 +44,17 @@ const ProjectDescStyled = styled.div`
         &:active{
             background: linear-gradient(to right, #ce412e, #B60000);
         }
+    }
+    @media (max-width: 768px){
+        flex-direction: column;
+        gap: 20px;
+        p{
+            width: 100%;
         }
+        a{
+            width: 40%;
+        }
+    }
 `
 
 export default ProjectDesc;
