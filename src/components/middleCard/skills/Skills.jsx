@@ -49,6 +49,12 @@ const SkillsStyled = styled.div`
 
     }
 
+    @media (max-width: 1024px){
+        .skillsContainerGrid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
 `
 
 export default Skills;

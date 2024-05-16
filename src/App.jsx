@@ -41,7 +41,11 @@ const MainPageStyled = styled.div`
   display: flex;
   background: #2a2a29;
   color: aliceblue;
-  padding: 5rem;
+  padding: 5rem 3rem;
+
+  @media (max-width: 1024px){
+    padding: 5rem 2rem;
+  }
 `;
 
 export default App;

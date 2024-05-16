@@ -35,6 +35,19 @@ const AboutContainerImagesStyled = styled.div`
             
         }
     }
+
+    @media (max-width: 1024px){
+        .numberContainer{
+
+            p{
+                text-align: center;
+                left: 10%;
+            }
+            img{
+                height: 150px;
+            }
+        }
+    }
 `
  
 export default AboutContainerImages;

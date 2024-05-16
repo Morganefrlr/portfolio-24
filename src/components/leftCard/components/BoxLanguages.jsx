@@ -53,10 +53,12 @@ const BoxLanguagesStyled = styled.div`
       }
       .noFull{
         border-top:3px solid transparent;
-      }
-
-      
+      } 
     }
+  }
+
+  @media (max-width: 1024px){
+    gap: 20px;
   }
 `;
 export default BoxLanguages;

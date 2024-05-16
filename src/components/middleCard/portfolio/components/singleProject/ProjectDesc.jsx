@@ -27,6 +27,7 @@ const ProjectDescStyled = styled.div`
         justify-content: center;
         align-items: center;
         align-self: center;
+        text-align: center;
         margin: 0 auto;
         width: 25%;
         height: 50px;
