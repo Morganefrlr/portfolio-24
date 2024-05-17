@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { skillsArray } from "../../../helper/middleCardConfig";
 import CardSkill from "./components/CardSkill"
+import { middleCardAnimation } from "../../../theme/animation";
 
 const Skills = () => {
 
@@ -29,6 +30,7 @@ const SkillsStyled = styled.div`
     padding: 30px;
     max-height: 85vh;
     overflow-y: scroll;
+    animation: ${middleCardAnimation} 1s ease-in-out;
     &::-webkit-scrollbar{
         display: none;
     }

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { experienceConfig, formationConfig } from "../../../helper/middleCardConfig";
 import SingleExpeComponent from "./components/SingleExpeComponent";
 import SingleFormationComponent from "./components/SingleFormationComponent";
+import { middleCardAnimation } from "../../../theme/animation";
 
 
 const Experience = () => {
@@ -42,6 +43,7 @@ const ExperienceStyled = styled.div`
     padding: 30px;
     max-height: 85vh;
     overflow-y: scroll;
+    animation: ${middleCardAnimation} 1s ease-in-out;
     &::-webkit-scrollbar{
         display: none;
     }

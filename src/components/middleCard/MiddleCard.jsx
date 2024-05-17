@@ -3,6 +3,7 @@ import { useContext } from "react";
 import AdminContext from "../../context/AdminContext";
 import { getContentMiddleCard, navbarMenuConfig } from "../../helper/navbarConfig";
 
+
 const MiddleCard = () => {
   const { menuSelected } = useContext(AdminContext)
   const contentMiddleCard = getContentMiddleCard(menuSelected, navbarMenuConfig);
@@ -16,7 +17,7 @@ const MiddleCardStyled = styled.div`
   background: #2a2a29;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
   display: flex;
-
+  overflow: hidden;
 
   @media (max-width: 768px){
     width: 90vw;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { projectsPortfolio } from "../../../../helper/middleCardConfig";
 import CardProject from "./card/CardProject";
+import { leftCardAnimation } from "../../../../theme/animation";
 
 const ProjectsContainer = ({handleClick}) => {
 

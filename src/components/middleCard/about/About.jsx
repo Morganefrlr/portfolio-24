@@ -4,6 +4,7 @@ import AdminContext from "../../../context/AdminContext";
 import AboutTextPart from "./components/AboutTextPart";
 import AboutContainerImages from "./components/AboutContainerImages";
 import AboutButton from "./components/AboutButton";
+import { middleCardAnimation } from "../../../theme/animation";
 
 const About = () => {
     const{ setMenuSelected} = useContext(AdminContext)
@@ -23,5 +24,6 @@ const AboutStyled = styled.div`
     flex-direction: column;
     gap: 20px;
     margin: 10% auto;
+    animation: ${middleCardAnimation} 1s ease-in-out;
 `
 export default About;

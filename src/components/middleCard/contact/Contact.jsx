@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Form from './component/Form';
 import ContactCard from './component/ContactCard';
+import { middleCardAnimation } from '../../../theme/animation';
 
 
 
@@ -24,6 +25,7 @@ const ContactStyled = styled.div`
     padding: 30px;
     max-height: 85vh;
     overflow-y: scroll;
+    animation: ${middleCardAnimation} 1s ease-in-out;
     &::-webkit-scrollbar{
        display: none;
     }

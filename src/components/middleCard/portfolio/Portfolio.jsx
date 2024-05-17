@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useContext } from 'react';
 import AdminContext from '../../../context/AdminContext';
 import { getContentMiddleCardPortfolio, portfolioContentConfig } from './components/portfolioConfig';
+import { middleCardAnimation } from '../../../theme/animation';
 
 
 const Portfolio = () => {
@@ -30,6 +31,7 @@ const PortfolioStyled = styled.div `
     padding: 30px;
     max-height: 85vh;
     overflow-y: scroll;
+    animation: ${middleCardAnimation} 1s ease-in-out;
     &::-webkit-scrollbar{
        display: none;
     }

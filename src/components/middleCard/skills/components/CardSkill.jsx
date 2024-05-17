@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import CardSkillBar from './CardSkillBar';
 
+
 const CardSkill = ({label, color, icon, number}) => {
     return (
         <CardSkillStyled>

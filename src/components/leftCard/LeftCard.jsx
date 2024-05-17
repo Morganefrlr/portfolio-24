@@ -3,6 +3,7 @@ import BoxInfos from "./components/BoxInfos";
 import BoxLanguages from "./components/BoxLanguages";
 import BoxSocial from "./components/BoxSocial";
 import ButtonCv from "./components/ButtonCv";
+import { leftCardAnimation } from "../../theme/animation";
 
 const LeftCard = () => {
   return (
@@ -24,7 +25,8 @@ const LeftCardStyled = styled.div`
     background:  #2a2a29;
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
                 -15px -15px 30px rgb(60, 60, 60);
-                margin-right: 1rem;
+    margin-right: 1rem;
+    animation: ${leftCardAnimation} 1s ease-in-out;
   img {
     width: 100%;
     height: 300px;
