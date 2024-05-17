@@ -197,19 +197,19 @@ export const experienceConfig = [
 export const projectsPortfolio = [
     {
      label:"MugStyle",
-     details:"Dashboard, Front-end",
+     details:"Eshop, Front-end",
      className:"one",
      img:"/projects/mugstyle.png",
-     desc:"Projet personel React et SASS Front-end. Dashboard multi-projets. Présenté sous la forme d'un tableau de bord, vous trouverez présenté ici plusieurs petit projets classique: Calculatrice, Météo, Calendrier et Heure, Musique player, Quiz, To do list, Tik Tak Toe, Memory.",
+     desc:"Projet personel développé avec NextJs, Typescript, et SASS pour la partie Front-End. Projet Full-Stack à terme. Maquettes créées sur FIGMA",
      link:"https://eshop-mugstyle2024.vercel.app/",
      video: "/videos/mugStyle.mp4",
     }, 
     {
      label:"CrazeeBurger",
-     details:"Dashboard, Front-end",
+     details:"Restaurant, Front-end",
      className:"two",
      img:"/projects/crazee.png",
-     desc:"Projet personel React et SASS Front-end. Dashboard multi-projets. Présenté sous la forme d'un tableau de bord, vous trouverez présenté ici plusieurs petit projets classique: Calculatrice, Météo, Calendrier et Heure, Musique player, Quiz, To do list, Tik Tak Toe, Memory.",
+     desc:"Projet de Formation 'React en Entrepise': Application web développée avec ViteJs, Styled-Component et Firebase pour la base de donnée. Maquettes Figma",
      link:"https://crazee-burger-git-main-morganes-projects.vercel.app/",
      video: "/videos/crazee.mp4",
     }, 
