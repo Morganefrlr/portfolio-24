@@ -46,6 +46,12 @@ export const skillLang = [
         number: 60,
     },
     {
+        label: 'Angular',
+        icon: '/logos/angu.png',
+        couleur:'#c2002f',
+        number: 50,
+    },
+    {
         label: 'Typescript',
         icon: '/logos/ts.png',
         couleur:'#3178c6',

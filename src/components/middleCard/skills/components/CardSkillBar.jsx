@@ -12,7 +12,7 @@ const CardSkillBar = ({color, number}) => {
 
 const CardSkillBarStyled = styled.div`
     width: 80%;
-    height: 25px;
+    height: 15px;
     display: flex;
     border-radius: 50px;
     margin-bottom: 20px;
@@ -23,6 +23,7 @@ const CardSkillBarStyled = styled.div`
         justify-content: flex-end;
         align-items: center;
         padding-right: 10px;
+        font-size: 12px;
     }
 
 `

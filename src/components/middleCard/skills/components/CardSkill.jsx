@@ -30,13 +30,13 @@ const CardSkillStyled = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         background: red;
         border-radius: 50px;
         position: absolute;
         bottom: 75px;
-        left: 50px;
+        left: 60px;
         overflow: hidden;
         border: 5px solid #2a2a29;
         img{
