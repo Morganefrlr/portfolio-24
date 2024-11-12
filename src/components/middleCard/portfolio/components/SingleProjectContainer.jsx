@@ -27,8 +27,9 @@ const SingleProjectContainerStyled = styled.div`
     gap: 50px;
 
     video{
-        width: 100%;
+        width: 50%;
         border-radius: 20px;
+        margin: 0 auto;
     }
 `
 
